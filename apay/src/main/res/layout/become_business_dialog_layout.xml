@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:background="@drawable/white_shape_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="您的券不足200000"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="暂不满足商家入驻条件"
+        android:textColor="@color/black" />
+
+    <View
+        style="@style/gray_line_style"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_i_kown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="我知道啦～"
+        android:textColor="@color/btn_color" />
+
+</LinearLayout>

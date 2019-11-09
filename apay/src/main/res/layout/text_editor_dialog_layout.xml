@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_height="260dp"
+    android:background="@drawable/white_shape_bg"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/ed_input_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/white_shape_bg"
+            android:gravity="start"
+            android:hint="请输入内容"
+            android:inputType="textMultiLine"
+            android:maxLength="150"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:scrollHorizontally="false"
+            android:textColor="@color/black"
+            android:singleLine="false"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_max_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@color/btn_cancle_bg"
+        android:textColor="@color/white"
+        android:text="保存"/>
+
+</LinearLayout>

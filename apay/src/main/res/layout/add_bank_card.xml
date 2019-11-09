@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="持卡人："
+                android:textSize="15sp" />
+
+            <com.ysxsoft.apaycoin.widget.LimitEditText
+                android:id="@+id/ed_belong_person"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入真实姓名"
+                android:inputType="text"
+                android:textColorHint="#686868" />
+
+
+        </LinearLayout>
+
+        <View style="@style/gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝账号："
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_zhifubao"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入支付宝号"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:textColorHint="#686868" />
+
+
+        </LinearLayout>
+
+        <View style="@style/gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户行："
+                android:textSize="15sp" />
+
+            <com.ysxsoft.apaycoin.widget.LimitEditText
+                android:id="@+id/ed_open_card_bank"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请填写开户行"
+                android:inputType="text"
+                android:textColorHint="#686868" />
+
+
+        </LinearLayout>
+
+        <View style="@style/gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡    号："
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_card_num"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入银行卡号"
+                android:inputType="number"
+                android:textColorHint="#686868" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/submit" />
+
+</LinearLayout>

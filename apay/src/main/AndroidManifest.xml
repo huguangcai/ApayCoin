@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ysxsoft.apaycoin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- unavailable in API 23 -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".com.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/apaycoin_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/apaycoin_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <activity android:name=".view.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.MyOrderActivity" />
+        <activity android:name=".view.RegisterActivity" />
+        <activity android:name=".view.ForgetPassWordActivity" />
+        <activity android:name=".view.MyActivity" />
+        <activity android:name=".view.SettingActivity" />
+        <activity android:name=".view.ScanActivity" />
+        <activity android:name=".view.RollOutActivity" />
+        <activity android:name=".view.RollIntputActivity" />
+        <activity android:name=".view.OnLineMallActivity" />
+        <activity android:name=".view.NumAssetActivity" />
+        <activity android:name=".view.NearBusinessActivity" />
+        <activity android:name=".view.PersonCenterActivity" />
+        <activity android:name=".view.NextRollOutActivity" />
+        <activity android:name=".view.ConvertibilityActivity" />
+        <activity android:name=".view.ExchangeRecordActivity" />
+        <activity android:name=".view.RollInputRecordActivity" />
+        <activity android:name=".view.BecomeBusinessActivity" />
+        <activity android:name=".view.PersonDataActivity" />
+        <activity android:name=".view.AddressManagerActivity" />
+        <activity android:name=".view.MybankCardActivity" />
+        <activity android:name=".view.ModifyLoginPasswordActivity" />
+        <activity android:name=".view.MyAssetActivity" />
+        <activity android:name=".view.ShareActivity" />
+        <activity android:name=".view.NoticeActivity" />
+        <activity android:name=".view.PersonInfoActivity" />
+        <activity android:name=".view.GiveFeedBackActivity" />
+        <activity android:name=".view.AboutMyActivity" />
+        <activity android:name=".view.PaySuccessActivity" />
+        <activity android:name=".view.LookMyMallActivity" />
+        <activity android:name=".view.ModifyPayPwdActivity" />
+        <activity android:name=".view.ModifyLoginPwdActivity" />
+        <activity android:name=".view.ForgetPayPwdActivity" />
+        <activity android:name=".view.NewAddGoodsActivity" />
+        <activity android:name=".view.AddBankCardActivity" />
+        <activity android:name=".view.AddBankCardSucessActivity" />
+        <activity android:name="com.ysxsoft.zxing.CaptureActivity" />
+        <activity android:name=".view.NoticeDetailActivity" />
+        <activity android:name=".view.NewAddAddressActivity" />
+        <activity android:name=".view.BalanceMoneyRecordActivity" />
+        <activity android:name=".view.TicketRecordActivity" />
+        <activity android:name=".view.ChangeTicketRecordActivity" />
+        <activity android:name=".view.RollOutRecordActivity" />
+        <activity android:name=".view.NumAssetApayActivity" />
+        <activity android:name=".view.NumAssetRollOutActivity" />
+        <activity android:name=".view.CrowdFundingActivity" />
+        <activity android:name=".view.WalletAddressActivity" />
+        <activity android:name=".view.IssueApayActivity" />
+        <activity android:name=".view.SaleOrderActivity" />
+        <activity android:name=".view.BuyOrderActivity" />
+        <activity android:name=".view.TradeRecordActivity" />
+        <activity android:name=".view.LookMyOrderActivity" />
+        <activity android:name=".view.ScanPayActivity" />
+        <activity android:name=".view.NewAddGoodsEditorActivity" />
+        <activity android:name=".view.MallGoodsDetialActivity" />
+        <activity android:name=".view.NewAddGoodsSaveActivity"/>
+        <activity android:name=".view.OnlineMallGoodsDetialActivity"/>
+        <activity android:name=".view.SearchDataActivity"/>
+        <activity android:name=".view.OrderCheckActivity"/>
+        <activity android:name=".view.OnlineMallLookShopActivity"/>
+        <activity android:name=".view.OrderDetialActivity"/>
+        <activity android:name=".view.MerchantOrderActivity"/>
+        <activity android:name=".view.ShareRecordActivity"/>
+        <activity android:name=".view.UnderLineActivity"/>
+        <activity android:name=".view.EditorNewAddGoodsActivity"/>
+        <activity android:name=".view.BusinessInstructionsActivity"/>
+
+    </application>
+
+</manifest>
